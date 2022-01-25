@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+main
+    seccion-articulos  // flex
+        articulos 
+            articulos-individuales
+                
+                img-box
+                    img
+                caja-descripcion-articulos  
+                    shipping-contenedor (icono)
+                    caja-precio-oferta
+                        price
+                        discount
+                    description
+
+    seccion-articulos-off
+
+
+
+
