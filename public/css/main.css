@@ -241,6 +241,10 @@ em {
     justify-content: center;
     margin-right: 0%;
   }
+  .Logo-contenedor {
+    width: 50%;
+    margin-left: -10px;
+  }
   .LOGO {
     display: block;
     width: 100%;
@@ -328,6 +332,12 @@ em {
   header {
     margin-top: 4vh;
   }
+  .Logo-contenedor {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+
+  }
   .LOGO {
     width: 65%;
     min-width: 135px;
@@ -402,14 +412,14 @@ em {
     justify-content: center;
   }
   .LOGO {
-    width: 65%;
+    width: 55%;
     min-width: 135px;
-    margin-right: 0%;
+    margin-right: 50%;
   }
   .search {
     width: 80%;
   }
-  .buscador{
+  .buscador {
     margin-left: 0%;
   }
   .ico-y-cuotas {
