@@ -17,18 +17,25 @@ header {
   align-items: center;
   width: 100%;
 }
-.Logo-contenedor{
+.Logo-contenedor {
   display: flex;
   justify-content: center;
-  width:50%
+  width: 50%;
 }
 .LOGO {
   display: block;
+}
+.logo-busqueda-box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .buscador {
   display: flex;
   justify-content: center;
   width: 50%;
+  height: 50%;
+  align-self: center;
 }
 .boton-buscar {
   background-color: #03264c;
@@ -117,7 +124,6 @@ img {
 .description {
   font-size: 1em;
   display: none;
- 
 }
 
 .seccion-articulos {
@@ -141,9 +147,9 @@ img {
   transition: all 450ms;
 }
 /*sombra de Articulos*/
-.articulos:hover{
-  box-shadow: 0px 0px 10px rgb(100, 100, 100)
-  }
+.articulos:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
 
 .articulos-indiv {
   width: 90%;
@@ -160,8 +166,8 @@ img {
   transition: all 450ms;
 }
 /* en movile, aparece la Description*/
-.caja-descripcion-art:hover .description{
-  display: block
+.caja-descripcion-art:hover .description {
+  display: block;
 }
 
 .caja-precio-oferta {
@@ -198,10 +204,10 @@ em {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 450ms
+  transition: all 450ms;
 }
-.fa-shipping-fast:hover{
-  transform:rotate(-90deg);
+.fa-shipping-fast:hover {
+  transform: rotate(-90deg);
 }
 
 /* MEDIA QUERIES */
@@ -212,7 +218,7 @@ em {
 /* MEDIA QUERIES */
 
 /* TABLET */
-@media (min-width: 361px) {
+@media (min-width: 481px) {
   .nav-header {
     display: grid;
   }
@@ -220,11 +226,10 @@ em {
   section.contenedor-logo-busqueda {
     flex-wrap: nowrap;
   }
-  .logo-busqueda-box{
+  .logo-busqueda-box {
     display: flex;
     width: 100%;
     justify-content: center;
-
   }
   .LOGO {
     display: block;
@@ -259,12 +264,11 @@ em {
     width: 50%;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
-  .articulos:hover{
+  .articulos:hover {
     box-shadow: 0px 0px 50px rgb(100, 100, 100);
   }
   .description {
     display: block;
-
   }
 }
 
@@ -281,7 +285,7 @@ em {
     width: 25%;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
-  .articulos:hover{
+  .articulos:hover {
     box-shadow: 0px 0px 50px rgb(100, 100, 100);
   }
   .description {
