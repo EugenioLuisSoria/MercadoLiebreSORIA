@@ -93,6 +93,11 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+/*SLIDER*/
+.slider {
+  display: none;
+}
 /* GENERAL */
 h2 {
   font-size: 1.5em;
@@ -300,7 +305,19 @@ em {
   .fa-shopping-cart {
     margin-right: 4px;
   }
-
+  /*SLIDER*/
+  .slider {
+    display: block;
+    width: 104vw;
+    position: relative;
+    left: -6%;
+    overflow: hidden;
+  }
+  .slider img {
+    width: 100%;
+    margin: 0;
+    padding: 0%;
+  }
   /*HAMBURGUESA*/
   .burger-menu {
     display: none;
@@ -336,7 +353,6 @@ em {
     display: flex;
     justify-content: center;
     margin-left: 0px;
-
   }
   .LOGO {
     width: 65%;
