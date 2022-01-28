@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
 body {
   font-family: "Roboto", sans-serif;
   background-color: #eac926;
@@ -103,6 +104,7 @@ h2 {
   font-size: 1.5em;
   text-align: left;
   margin: 10px;
+  font-weight: 300;
 }
 p {
   font-size: 0.75em;
