@@ -8,14 +8,15 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #ebebeb;
   box-sizing: border-box;
-  margin: 0;
+  margin: 0px;
 
 }
 
 /* HEADER */
 header {
-  width: 100%;
+  width: 100vw;
   background-color: #eac926;
+  margin: 0%;
   padding: 1.5vw;
   padding-bottom: 3vw;
 }
@@ -97,16 +98,28 @@ main {
 footer {
   text-align: center;
   margin: 10px;
+  margin-top: 6vh;
+  margin-bottom: 0px;
 }
+
 .ico-footer {
   margin-bottom: 10px;
   width: 2em;
 }
 .contenedor-footer-ico {
+  color: #1259c3;
   display: flex;
   justify-content: center;
 }
+footer section {
+  margin-bottom: 4vh;
+  border-top: solid 1px #667;;
+  padding-top: 4vh;
+}
 
+h4{
+  font-size: 0.5rem;
+}
 /*SLIDER*/
 .slider {
   display: none;
@@ -142,13 +155,13 @@ img {
   font-weight: 200;
   color: #3ebe4f;
   margin: 0%;
-  margin-left: 2rem;
+  margin-left: 0.9rem;
   width: 70%;
 }
 .description {
   font-size: 1em;
   display: none;
-  margin-left: 5vw;
+  margin-left: 0vw;
 }
 
 .seccion-articulos {
@@ -190,22 +203,25 @@ img {
   text-align: left;
   transition: all 450ms;
 }
-/* en movile, aparece la Description*/
+/* en mobile, aparece la Description*/
+
 .caja-descripcion-art:hover .description {
   display: block;
 }
 
 .caja-precio-oferta {
   display: flex;
-  width: 75%;
+  width: 100%;
   justify-content: center;
   align-items: center;
+  margin-top: 2vh;
 }
 
 .shipping-contenedor {
   margin: 0%;
   display: flex;
   position: relative;
+  left: 2vw;
   justify-content: center;
   align-items: center;
 }
@@ -235,6 +251,8 @@ img {
 .fa-shipping-fast:hover {
   transform: rotate(-90deg);
 }
+
+
 
 /* MEDIA QUERIES */
 /* MEDIA QUERIES */
@@ -327,7 +345,8 @@ img {
   /*SLIDER*/
   .slider {
     display: block;
-    width: 100vw;
+    width: 99.8vw;
+    /*overflow: hidden;*/
   }
   .slider img {
     width: 100%;
@@ -353,6 +372,9 @@ img {
   }
   .description {
     display: block;
+  }
+  .shipping-contenedor{
+    left:0vw;
   }
 }
 
@@ -452,8 +474,9 @@ img {
     margin-left: -10%;
   }
   .ico-y-cuotas {
+    width: 50%;
     font-size: 1vw;
-    right: -3vw;
+    right: 0vw;
   }
   /*NAV*/
   .nav-header {
