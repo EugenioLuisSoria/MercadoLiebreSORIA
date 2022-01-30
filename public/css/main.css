@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   background-color: #ebebeb;
-  margin: 0%;
   box-sizing: border-box;
-  justify-content: space-around;
+  margin: 0;
+
 }
 
 /* HEADER */
 header {
-  margin: 10px;
+  width: 100%;
+  background-color: #eac926;
+  padding: 1.5vw;
+  padding-bottom: 3vw;
 }
 .contenedor-logo-busqueda {
   display: flex;
@@ -33,11 +41,14 @@ header {
 }
 .buscador {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 50%;
   height: 50%;
   align-self: center;
   margin-left: 7%;
+}
+.search{
+  width: 29vw;
 }
 .boton-buscar {
   background-color: #03264c;
@@ -77,9 +88,10 @@ li {
 }
 /* MAIN */
 main {
-  width: 90%;
+  display: inline-block;
+  width: 100%;
+  margin: 0px;
   text-align: center;
-  margin: auto;
 }
 /* FOOTER */
 footer {
@@ -102,8 +114,6 @@ footer {
 /* GENERAL */
 h2 {
   font-size: 1.5em;
-  text-align: left;
-  margin: 10px;
   font-weight: 300;
 }
 p {
@@ -124,19 +134,21 @@ img {
   display: block;
   font-size: 1rem;
   margin: 0%;
-  width: 30%;
+  
+  width: 100%;
 }
 .discount {
-  display: block;
   font-size: 1rem;
   font-weight: 200;
   color: #3ebe4f;
   margin: 0%;
+  margin-left: 2rem;
   width: 70%;
 }
 .description {
   font-size: 1em;
   display: none;
+  margin-left: 5vw;
 }
 
 .seccion-articulos {
@@ -185,6 +197,7 @@ img {
 
 .caja-precio-oferta {
   display: flex;
+  width: 75%;
   justify-content: center;
   align-items: center;
 }
@@ -197,7 +210,7 @@ img {
   align-items: center;
 }
 
-em {
+  em {
   /*boton envio*/
   display: block;
   font-size: 1em;
@@ -233,11 +246,10 @@ em {
 /* TABLET */
 @media (min-width: 481px) {
   main {
-    margin-top: 1vh;
   }
   /* HEADER */
   header {
-    margin-top: 2vh;
+    padding: 0vw;
   }
   section.contenedor-logo-busqueda {
     flex-wrap: nowrap;
@@ -266,6 +278,10 @@ em {
     height: 2.5vh;
     min-width: 130px;
     min-height: 2.5vh;
+    margin: 0%;
+  }
+  .search{
+    width: 80%;
   }
   .boton-buscar {
     background-color: #03264c;
@@ -277,6 +293,7 @@ em {
   .ico-y-cuotas {
     width: 60%;
     font-size: 1.4vw;
+    margin: 0px;
   }
   .fa-hand-holding-usd {
     display: inline-block;
@@ -310,10 +327,7 @@ em {
   /*SLIDER*/
   .slider {
     display: block;
-    width: 104vw;
-    position: relative;
-    left: -6%;
-    overflow: hidden;
+    width: 100vw;
   }
   .slider img {
     width: 100%;
@@ -345,11 +359,9 @@ em {
 /* LAPTOP */
 @media (min-width: 769px) {
   main {
-    margin-top: 4vh;
   }
   /* HEADER */
   header {
-    margin-top: 4vh;
   }
   .Logo-contenedor {
     display: flex;
@@ -365,15 +377,16 @@ em {
     width: 80%;
   }
   .ico-y-cuotas {
+    position: relative;
+    right: 3vw;
     width: 45%;
-    font-size: 0.9vw;
   }
   /*NAV*/
   .nav-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px;
   }
   .nav-left {
     display: flex;
@@ -419,12 +432,9 @@ em {
 /* DESKTOP */
 @media (min-width: 1280px) {
   main {
-    margin-top: 4vh;
   }
   /* HEADER */
   header {
-    margin-top: 4vh;
-    background-color: #eac926;
   }
   .logo-busqueda-box {
     width: 125%;
@@ -432,25 +442,25 @@ em {
   }
   .LOGO {
     width: 55%;
-    min-width: 135px;
     margin-right: 50%;
+    margin-left: -15%;
   }
   .search {
     width: 80%;
   }
   .buscador {
-    margin-left: 0%;
+    margin-left: -10%;
   }
   .ico-y-cuotas {
-    width: 45%;
-    font-size: 0.9vw;
+    font-size: 1vw;
+    right: -3vw;
   }
   /*NAV*/
   .nav-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 24px;
+    font-size: 16px;
     
   }
   .nav-left {
