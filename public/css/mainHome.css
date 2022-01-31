@@ -54,7 +54,10 @@ header {
   background-color: #03264c;
 }
 .ico-y-cuotas {
+  font-size: 0.8em;
   margin: 3vw;
+  margin-bottom: 3vh;
+
 }
 
 .fa-search {
@@ -85,6 +88,19 @@ li {
   justify-content: center;
   text-align: center;
   background-color: #03264c;
+}
+.menu-magico{
+  color: #ebebeb;
+  background-color: #1259c3;
+  position:absolute;
+  left:-0vw;
+  display: none;
+  transition: all 450ms;
+}
+
+.burger-menu:hover .menu-magico{
+  display: block;
+  left: 8vw;
 }
 /* MAIN */
 main {

@@ -60,70 +60,67 @@
         
         <form action="/register" method="get">
         <div>
-            <label for="nombre-apellido">Nombre y Apellido</label>
-            <input type="text" name="nombre-apellido" id="nombre-apellido">
+            <input type="text" name="nombre-apellido" id="nombre-apellido" placeholder="Nombre y Apellido">
         
         </div>
         <div>
-            <label for="usuario">Nombre de Usuario</label>
-            <input type="text" name="usuario" id="nombre">
+            <input type="text" name="usuario" id="nombre" placeholder="Nombre de Usuario">
         </div>
         
         <div>
-            <label for="nacimiento" >Fecha de Nacimiento</label>
-            <input type="date" name="nacimiento" id="nacimiento">
+            <label for="nacimiento"><h3 class="negrita">Fecha de Nacimiento</h3></label>
+            <input type="date" name="nacimiento" id="nacimiento" >
         </div>
         
         <div>
-            <label for="domicilio">Domicilio</label>
-            <input type="text" name="domicilio" id="domicilio">
-        </div>
-        
-         <div>
-         <label for="perfil-de-usuario">Perfil de Usuario>Que deseás más?</label>
-         <label for="Comprar">Comprar</label>
-         <input type="radio" name="perfil-de-usuario" id="perfil-de-usuario" value="Comprar">
-         <label for="Vender">Vender</label>
-         <input type="radio" name="perfil-de-usuario" id="perfil-de-usuario" value="Vender">
-         </div>
-        
-        <div>
-            <label for="categorias-interes">Cuales son tus gustos?</label>
-        
-            <label for="Electrónica">Electrónica</label>
-            <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Electrónica">
-            <label for="Deportes">Deportes</label>
-            <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Deportes">
-            <label for="Hogar">Hogar</label>
-            <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Hogar">
-            <label for="Música">Música</label>
-            <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Música">
-            <label for="Moda">Moda</label>
-            <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Moda">
-            <label for="OTROS">OTROS</label>
-            <input type="checkbox" name="categorias-interes" id="categorias-interes" value="OTROS">
+            <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
         </div>
         
         <div>
-            <label for="mas-intereses">Que mas te gusta?</label>
-            <textarea name="categorias-interes" id="mas-intereses"></textarea>
+            <h3 class="negrita">Perfil de Usuario:</h3>
+            <label for="Comprar">Comprar</label>
+            <input type="radio" name="perfil-de-usuario" id="perfil-de-usuario" value="Comprar">
+            <label for="Vender">Vender</label>
+            <input type="radio" name="perfil-de-usuario" id="perfil-de-usuario" value="Vender">
+            </div>
+        
+        <div class="intereses-container">
+            <div id="intereses">
+                <h3 class="negrita" for="categorias-interes">Cuales son tus gustos?</h3>
+                <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Electrónica">
+                    <label for="Electrónica">Electrónica</label><br>
+                <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Deportes">
+                    <label for="Deportes">Deportes</label><br>
+                <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Hogar">
+                    <label for="Hogar">Hogar</label><br>
+                <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Música">
+                    <label for="Música">Música</label><br>
+                <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Moda">
+                    <label for="Moda">Moda</label><br>
+                <input type="checkbox" name="categorias-interes" id="categorias-interes" value="OTROS">
+                    <label for="OTROS">OTROS</label><br>
+            </div>
         </div>
         
-        <label for="foto" name="foto"></label>
-        <input type="file" id="foto" accept=".jpg .png .bmp">
+        <div class="foto-upload">
+            <label for="foto" name="foto"></label>
+            <input type="file" id="foto" accept=".jpg .png .bmp" required>
+        </div>
         
-        <div>
-            <label for="pass"></label>
+        <div class="pass-text">
+            <label for="pass">Ingresá tu Nuevo Password</label><br>
             <input type="password" name="pass" id="pass">
         </div>
-        <div>
-        
-            <label for="pass-confirm"></label>
+        <div class="pass-text">
+            <label for="pass-confirm">Confirmá tu Nuevo Password</label><br>
             <input type="password" name="pass-confirm" id="pass-confirm">
         </div>
-        <button type="submit" name="submit">Enviar</button>
-        
-        <button type="reset" name="reset">Borrar</button>
+        <div class="buttons">
+            
+            <button type="submit" name="submit">Enviar</button>
+            
+            <button type="reset" name="reset">Borrar</button>
+        </div>
         
         
         
