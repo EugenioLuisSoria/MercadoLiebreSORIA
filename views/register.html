@@ -8,13 +8,14 @@
     <!-- ICONOS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet"/>
     <!-- CSS -->
-    <link href="/css/main.css" rel="stylesheet" type="text/css">
-    <link href="/css/register.css" rel="stylesheet" type="text/css">  
+    <link href="/css/mainHome.css" rel="stylesheet" type="text/css">
+    <link href="/css/register.css" rel="stylesheet" type="text/css">
 </head>
 
 </head>
 <body>
-<header>
+    <header>
+        
         <section class="contenedor-logo-busqueda">
 <!-- LOGO -->
             <div class="logo-busqueda-box">
@@ -33,73 +34,101 @@
                 <div class="ico-y-cuotas"><i class="fas fa-hand-holding-usd">Comprá en cuotas y sin tarjeta de crédito</i>
                 </div>
         </section>
-    
-<form action="/register" method="get">
-  
-    <label for="nombre-apellido">Nombre y Apellido</label>
-    <input type="text" name="nombre-apellido" id="nombre-apellido">
-    <br>
-
-    <label for="usuario">Nombre de Usuario</label>
-    <input type="text" name="usuario" id="nombre">
-
-    <br>
-    <label for="nacimiento" >Fecha de Nacimiento</label>
-    <input type="date" name="nacimiento" id="nacimiento">
-
-    <br>
-    <label for="domicilio">domicilio</label>
-    <input type="text" name="domicilio" id="domicilio">
-
-    <br>
-    <label for="perfil-de-usuario">Perfil de Usuario>Que deseás más?</label>
-
-    <label for="Comprar">Comprar</label>
-    <input type="radio" name="perfil-de-usuario" id="perfil-de-usuario" value="Comprar">
-    <label for="Vender">Vender</label>
-    <input type="radio" name="perfil-de-usuario" id="perfil-de-usuario" value="Vender">     
 
 
-    <br>
-    <label for="categorias-interes">Cuales son tus gustos?</label>
-    
-    <label for="Electrónica">Electrónica</label>
-    <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Electrónica">
-    <label for="Deportes">Deportes</label>
-    <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Deportes">
-    <label for="Hogar">Hogar</label>
-    <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Hogar">
-    <label for="Música">Música</label>
-    <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Música">
-    <label for="Moda">Moda</label>
-    <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Moda">
-    <label for="OTROS">OTROS</label>
-    <input type="checkbox" name="categorias-interes" id="categorias-interes" value="OTROS">
-    
-    <label for="mas-intereses">Que mas te gusta?</label>
-    <textarea name="categorias-interes" id="mas-intereses"></textarea>
+<!-- BARRA DE NAVEGACION -->
+<nav class="nav-header">
+    <ul class="nav-left">
+        <li><a href="">Ofertas</a></li>
+        <li><a href="">Tiendas Oficiales</a></li>
+        <li><a href="">Vender</a></li>
+        <li><a href="">Ayuda</a></li>
+    </ul>
 
-    <br>
-
-    <label for="foto" name="foto"></label>
-    <input type="file" id="foto" accept=".jpg .png .bmp">
-
-    <br>
-    <label for="pass"></label>
-    <input type="password" name="pass" id="pass">
-
-    <br>
-    <label for="pass-confirm"></label>
-    <input type="password" name="pass-confirm" id="pass-confirm">
-
-    <br>   
-    <button type="submit" name="submit">Enviar</button>
-    <br>
-    <button type="reset" name="reset">Borrar</button>
-
-
-
-</form>
+    <ul class="nav-right">
+        <li><a href=""><i class="fas fa-id-card"></i>Creá tu cuenta</a></li>
+        <li><a href=""><i class="fas fa-sign-in-alt"></i>Ingresá</a></li>
+        <li><a href=""><i class="fas fa-shopping-cart"></i>Mis Compras</a></li>
+    </ul>
+</nav>
+<!-- HAMBURGUESA -->
+<div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        
+        <form action="/register" method="get">
+        <div>
+            <label for="nombre-apellido">Nombre y Apellido</label>
+            <input type="text" name="nombre-apellido" id="nombre-apellido">
+        
+        </div>
+        <div>
+            <label for="usuario">Nombre de Usuario</label>
+            <input type="text" name="usuario" id="nombre">
+        </div>
+        
+        <div>
+            <label for="nacimiento" >Fecha de Nacimiento</label>
+            <input type="date" name="nacimiento" id="nacimiento">
+        </div>
+        
+        <div>
+            <label for="domicilio">Domicilio</label>
+            <input type="text" name="domicilio" id="domicilio">
+        </div>
+        
+         <div>
+         <label for="perfil-de-usuario">Perfil de Usuario>Que deseás más?</label>
+         <label for="Comprar">Comprar</label>
+         <input type="radio" name="perfil-de-usuario" id="perfil-de-usuario" value="Comprar">
+         <label for="Vender">Vender</label>
+         <input type="radio" name="perfil-de-usuario" id="perfil-de-usuario" value="Vender">
+         </div>
+        
+        <div>
+            <label for="categorias-interes">Cuales son tus gustos?</label>
+        
+            <label for="Electrónica">Electrónica</label>
+            <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Electrónica">
+            <label for="Deportes">Deportes</label>
+            <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Deportes">
+            <label for="Hogar">Hogar</label>
+            <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Hogar">
+            <label for="Música">Música</label>
+            <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Música">
+            <label for="Moda">Moda</label>
+            <input type="checkbox" name="categorias-interes" id="categorias-interes" value="Moda">
+            <label for="OTROS">OTROS</label>
+            <input type="checkbox" name="categorias-interes" id="categorias-interes" value="OTROS">
+        </div>
+        
+        <div>
+            <label for="mas-intereses">Que mas te gusta?</label>
+            <textarea name="categorias-interes" id="mas-intereses"></textarea>
+        </div>
+        
+        <label for="foto" name="foto"></label>
+        <input type="file" id="foto" accept=".jpg .png .bmp">
+        
+        <div>
+            <label for="pass"></label>
+            <input type="password" name="pass" id="pass">
+        </div>
+        <div>
+        
+            <label for="pass-confirm"></label>
+            <input type="password" name="pass-confirm" id="pass-confirm">
+        </div>
+        <button type="submit" name="submit">Enviar</button>
+        
+        <button type="reset" name="reset">Borrar</button>
+        
+        
+        
+        </form>
+    </main>
 
 </body>
 </html>

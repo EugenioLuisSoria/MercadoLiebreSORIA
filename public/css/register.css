@@ -1,8 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #eac926;
-  margin: 0%;
-  box-sizing: border-box;
-  justify-content: space-around;
+
 }
+main{
+
+}
+main div {
+  display: block;
+  margin: 3vh;
+}
+
+/*MEDIA QUERIES*/
+/*MEDIA QUERIES*/
+/*MEDIA QUERIES*/
+/*MEDIA QUERIES*/
+/*MEDIA QUERIES*/
+/*MEDIA QUERIES*/
+/* TABLET */
+@media (min-width: 481px) {
+}
+
+/* LAPTOP */
+@media (min-width: 769px) {
+}
+
+/* DESKTOP */
+  @media (min-width: 1280px) {}
