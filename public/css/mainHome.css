@@ -83,6 +83,7 @@ li {
   margin: auto;
   border-radius: 8px;
   align-items: center;
+  transition: all 450ms;
 }
 .fa-bars {
   justify-content: center;
@@ -90,17 +91,18 @@ li {
   background-color: #03264c;
 }
 .menu-magico{
+  display: none;
   color: #ebebeb;
   background-color: #1259c3;
   position:absolute;
-  left:-0vw;
-  display: none;
+  left:-10vw;
   transition: all 450ms;
 }
 
-.burger-menu:hover .menu-magico{
+.burger-menu:hover  .menu-magico{
   display: block;
-  left: 8vw;
+  left: 28vw;
+  top: 21vh;
 }
 /* MAIN */
 main {
