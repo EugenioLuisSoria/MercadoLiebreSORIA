@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
-
+@media (max-width:480px) not (orientation:landscape){
 body {
   display: flex;
   flex-direction: column;
@@ -252,7 +252,7 @@ img {
   transform: rotate(-90deg);
 }
 
-
+}
 
 /* MEDIA QUERIES */
 /* MEDIA QUERIES */
