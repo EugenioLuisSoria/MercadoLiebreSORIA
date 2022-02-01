@@ -56,7 +56,8 @@ header {
 .ico-y-cuotas {
   font-size: 0.8em;
   margin: 3vw;
-  margin-bottom: 3vh;
+  margin-top: 0vh;
+  
 
 }
 
@@ -96,7 +97,7 @@ li {
   background-color: #1259c3;
   position:absolute;
   left:-10vw;
-  transition: all 450ms;
+  transition: all 550ms;
 }
 
 .burger-menu:hover  .menu-magico{

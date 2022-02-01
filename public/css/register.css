@@ -13,7 +13,10 @@ input {
   border-bottom: solid 1px black;
   border-radius: 8%;
   background-color: #ebebeb;
-}
+  }
+  input.input-to-fill{
+    width: 65%;
+  }
 .negrita {
   font-size: 1rem;
   font-weight: 700;
@@ -30,8 +33,15 @@ div.intereses-container {
   text-align: justify;
   margin-top: -3%;
 }
+/*FILE FOTO*/
+input[type="file" i] {
+  font-family: "Roboto", sans-serif;
+  font-size: 00.8em;
+}
 
-.pass-text {
+
+.pass-text,
+label {
   font-size: 00.8em;
 }
 .buttons {
@@ -45,6 +55,9 @@ div.intereses-container {
 /*MEDIA QUERIES*/
 /* TABLET */
 @media (min-width: 481px) {
+   input.input-to-fill{
+      width: 50%;
+    }
 }
 
 /* LAPTOP */
@@ -53,4 +66,14 @@ div.intereses-container {
 
 /* DESKTOP */
 @media (min-width: 1280px) {
+  form{
+    margin-top: 10vh;
+  }
+  input.input-to-fill{
+    width: 25%;
+  }
+  .gustos{
+    margin-top: 5vh;
+    
+  }
 }
