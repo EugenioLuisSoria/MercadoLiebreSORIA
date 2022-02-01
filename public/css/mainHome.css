@@ -57,8 +57,6 @@ header {
   font-size: 0.8em;
   margin: 3vw;
   margin-top: 0vh;
-  
-
 }
 
 .fa-search {
@@ -91,16 +89,16 @@ li {
   text-align: center;
   background-color: #03264c;
 }
-.menu-magico{
+.menu-magico {
   display: none;
   color: #ebebeb;
   background-color: #1259c3;
-  position:absolute;
-  left:-10vw;
+  position: absolute;
+  left: -10vw;
   transition: all 550ms;
 }
 
-.burger-menu:hover  .menu-magico{
+.burger-menu:hover .menu-magico {
   display: block;
   left: 28vw;
   top: 21vh;
