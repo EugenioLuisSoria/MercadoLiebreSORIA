@@ -1,51 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
 
-body {
-}
-main {
+main{
+    margin-top: 10vh;
 }
 main div {
   display: block;
   margin: 3vh;
+  margin-top: 4vh;
 }
 input {
   border: none;
   border-bottom: solid 1px black;
   border-radius: 8%;
   background-color: #ebebeb;
-  }
-  input.input-to-fill{
-    width: 65%;
-  }
-.negrita {
-  font-size: 1rem;
-  font-weight: 700;
 }
-.nacimiento {
-  margin-top: 0;
-  margin-bottom: 0.8vw;
+input.input-to-fill {
+  width: 65%;
 }
-div.intereses-container {
-  display: flex;
-  justify-content: center;
-}
-#intereses {
-  text-align: justify;
-  margin-top: -3%;
-}
-/*FILE FOTO*/
-input[type="file" i] {
-  font-family: "Roboto", sans-serif;
-  font-size: 00.8em;
-}
+input[type="text" i],
+input[type="password" i]{
+    font-family: "Roboto", sans-serif;
 
-
-.pass-text,
-label {
-  font-size: 00.8em;
 }
 .buttons {
   margin-top: 7vh;
+ 
+
+
+}
+button{
+    font-family: "Roboto", sans-serif;
+    font-size: 00.8em;
+    background-color: #03264c;
+    color:#ebebeb;
+    border-style: none;
+    border-radius: 8%;
 }
 /*MEDIA QUERIES*/
 /*MEDIA QUERIES*/
@@ -55,9 +44,9 @@ label {
 /*MEDIA QUERIES*/
 /* TABLET */
 @media (min-width: 481px) {
-   input.input-to-fill{
-      width: 50%;
-    }
+  input.input-to-fill {
+    width: 50%;
+  }
 }
 
 /* LAPTOP */
@@ -66,14 +55,15 @@ label {
 
 /* DESKTOP */
 @media (min-width: 1280px) {
-  form{
+  form {
     margin-top: 10vh;
   }
-  input.input-to-fill{
+  input.input-to-fill {
     width: 25%;
   }
-  .gustos{
-    margin-top: 5vh;
-    
+  button{
+    font-size: 0.8em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
