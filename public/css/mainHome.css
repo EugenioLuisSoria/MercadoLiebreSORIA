@@ -560,6 +560,7 @@ em {
     display: none;
     }
 /*NUEVA SOMBRA*/
+
   .articulos,
   .description{
     transition: all 1s ease-in;

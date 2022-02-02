@@ -38,8 +38,8 @@ input[type="password" i]{
 button{
     font-family: "Roboto", sans-serif;
     font-size: 00.8em;
-    background-color: #03264c;
-    color:#ebebeb;
+    background-color:#ebebeb;
+    color: #03264c;
     border-style: none;
     border-radius: 8%;
 }
@@ -58,6 +58,13 @@ button{
 
 /* LAPTOP */
 @media (min-width: 769px) {
+  button{
+    transition: all 450ms;
+  }
+  button:hover{
+    background-color: #0022AA;
+    color: #ebebeb
+  }
 }
 
 /* DESKTOP */
