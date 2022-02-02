@@ -11,7 +11,6 @@ body {
   margin: 0px;
 }
 
-
 /* HEADER */
 header {
   width: 100vw;
@@ -464,26 +463,25 @@ em {
     display: block;
     display: none;
   }
-/*NUEVA SOMBRA*/
-/* QUE NO SÉ POR QUÉ NO FUNCIONA EN LAPTOP*/
-  .description{
+  /*NUEVA SOMBRA*/
+  /* QUE NO SÉ POR QUÉ NO FUNCIONA EN LAPTOP*/
+  .description {
     display: none;
   }
   .articulos,
-  .description{
+  .description {
     transition: all 1s ease-in;
   }
-  .articulos:hover{
+  .articulos:hover {
     padding-bottom: 8px;
     position: relative;
     left: 3px;
     top: 16px;
   }
-  
-  .articulos:hover .description{
+
+  .articulos:hover .description {
     display: block;
   }
-  
 }
 
 /* DESKTOP */
@@ -558,22 +556,40 @@ em {
   }
   .description {
     display: none;
-    }
-/*NUEVA SOMBRA*/
+  }
+  /*NUEVA SOMBRA*/
 
   .articulos,
-  .description{
+  .description {
     transition: all 1s ease-in;
   }
-  .articulos:hover{
+  .articulos:hover {
     padding-bottom: 8px;
     position: relative;
     left: 3px;
     top: 16px;
   }
-  
-  .articulos:hover .description{
+
+  .articulos:hover .description {
     display: block;
   }
-  
+
+  /*FOOTER*/
+  footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .foot1,
+  .foot2,
+  .foot3 {
+    width: 33%;
+  }
+  .copyright{
+    border: none;
+    margin-bottom: 5vh;
+  }
+  .fin{
+    height: 3vh;
+  }
 }
