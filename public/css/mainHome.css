@@ -600,6 +600,9 @@ em {
     flex-wrap: wrap;
     width: 90vw;
   }
+  strong{
+    font-size: 1.1vw;
+  }
   .foot1,
   .foot2,
   .foot3 {
