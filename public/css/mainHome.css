@@ -125,6 +125,12 @@ footer {
 .ico-footer {
   margin-bottom: 10px;
   width: 2em;
+  transition: all 450ms;
+}
+.fa-credit-card:hover,
+.fa-gift:hover,
+.fa-user-shield:hover{
+  color: #aa1155;
 }
 .contenedor-footer-ico {
   color: #1259c3;
@@ -507,9 +513,10 @@ em {
     margin-left: -10%;
   }
   .ico-y-cuotas {
+    position: relative;
     width: 50%;
-    font-size: 1vw;
-    right: 0vw;
+    font-size: 0.8vw;
+    right: -5vw;
   }
   /*NAV*/
   .nav-header {
@@ -575,10 +582,15 @@ em {
   }
 
   /*FOOTER*/
+  .separador{
+    width: 100vw;
+    height: 5vh;
+  }
   footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 90vw;
   }
   .foot1,
   .foot2,
@@ -587,7 +599,7 @@ em {
   }
   .copyright{
     border: none;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
   }
   .fin{
     height: 3vh;

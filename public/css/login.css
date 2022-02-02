@@ -69,9 +69,7 @@ button{
 
 /* DESKTOP */
 @media (min-width: 1280px) {
-  form {
-    margin-top: 10vh;
-  }
+
   input.input-to-fill {
     width: 25%;
   }
