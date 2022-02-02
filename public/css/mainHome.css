@@ -41,7 +41,7 @@ header {
 }
 .buscador {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   width: 50%;
   height: 50%;
   align-self: center;
@@ -129,7 +129,7 @@ footer {
 }
 .fa-credit-card:hover,
 .fa-gift:hover,
-.fa-user-shield:hover{
+.fa-user-shield:hover {
   color: #aa1155;
 }
 .contenedor-footer-ico {
@@ -372,10 +372,18 @@ em {
     width: 99.8vw;
   }
   .slider img {
-    width: 100%;
+    width: 101%;
     margin: 0;
     padding: 0%;
   }
+  .slider img,
+  header{
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+
   /*HAMBURGUESA*/
   .burger-menu {
     display: none;
@@ -507,7 +515,7 @@ em {
     margin-left: -15%;
   }
   .search {
-    width: 80%;
+    width: 100%;
   }
   .buscador {
     margin-left: -10%;
@@ -516,7 +524,7 @@ em {
     position: relative;
     width: 50%;
     font-size: 0.8vw;
-    right: -5vw;
+    right: -7vw;
   }
   /*NAV*/
   .nav-header {
@@ -582,7 +590,7 @@ em {
   }
 
   /*FOOTER*/
-  .separador{
+  .separador {
     width: 100vw;
     height: 5vh;
   }
@@ -597,11 +605,11 @@ em {
   .foot3 {
     width: 33%;
   }
-  .copyright{
+  .copyright {
     border: none;
     margin-bottom: 3vh;
   }
-  .fin{
+  .fin {
     height: 3vh;
   }
 }
