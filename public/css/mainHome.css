@@ -341,6 +341,9 @@ em {
     display: inline-block;
   }
   /*NAV*/
+  a {
+    text-decoration: none;
+  }
   .nav-header {
     display: flex;
     justify-content: space-between;
@@ -377,12 +380,11 @@ em {
     padding: 0%;
   }
   .slider img,
-  header{
+  header {
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
   }
-
 
   /*HAMBURGUESA*/
   .burger-menu {
@@ -398,19 +400,27 @@ em {
     margin-bottom: 1.5vh;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
+  .description{
+    color: white;
+    transition: all 2s;
+    }
   .articulos:hover {
     box-shadow: 0px 0px 50px rgb(100, 100, 100);
   }
-  .description {
-    display: block;
+  .articulos:hover .description {
+    color: black;
   }
+  
   .shipping-contenedor {
     left: 0vw;
   }
 }
 
 /* LAPTOP */
-@media (min-width: 769px) NOT (orientation: landscape) {
+@media (min-width: 769px){
+  .description {
+    display: block;
+  }   
   /* HEADER */
   .Logo-contenedor {
     display: flex;
@@ -473,29 +483,7 @@ em {
   .articulos:hover {
     box-shadow: 0px 0px 50px rgb(100, 100, 100);
   }
-  .description {
-    display: block;
-    display: none;
-  }
-  /*NUEVA SOMBRA*/
-  /* QUE NO SÉ POR QUÉ NO FUNCIONA EN LAPTOP*/
-  .description {
-    display: none;
-  }
-  .articulos,
-  .description {
-    transition: all 1s ease-in;
-  }
-  .articulos:hover {
-    padding-bottom: 8px;
-    position: relative;
-    left: 3px;
-    top: 16px;
-  }
-
-  .articulos:hover .description {
-    display: block;
-  }
+  
 }
 
 /* DESKTOP */
@@ -570,25 +558,9 @@ em {
     box-shadow: 0px 0px 50px rgb(100, 100, 100);
   }
   .description {
-    display: none;
-  }
-  /*NUEVA SOMBRA*/
-
-  .articulos,
-  .description {
-    transition: all 1s ease-in;
-  }
-  .articulos:hover {
-    padding-bottom: 8px;
-    position: relative;
-    left: 3px;
-    top: 16px;
-  }
-
-  .articulos:hover .description {
     display: block;
-  }
-
+  } */
+  
   /*FOOTER*/
   .separador {
     width: 100vw;
@@ -600,7 +572,7 @@ em {
     flex-wrap: wrap;
     width: 90vw;
   }
-  strong{
+  strong {
     font-size: 1.1vw;
   }
   .foot1,
